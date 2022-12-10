@@ -14,12 +14,18 @@ html {
  * Global layout stuff
  */
 
+* {
+  font-family: Source Sans Pro, sans-derif;
+}
+
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #292929;
+  background-color: #edebff;
   font-size: 24px;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ 

@@ -1,0 +1,27 @@
+header {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  top: 120px;
+  background-color: rgb(211, 169, 250);
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+}
+
+/* Avatar image */
+header img {
+  display: inline-block;
+  position: relative;
+  left: 42vw;
+  top: 15px
+}
+
+/* Name Text */
+header h2 {
+  display: inline-block;
+  width: 256px;
+  text-align: center;
+  position: relative;
+  left: 42vw;
+  top: 15px;
+  color: rgb(36, 40, 40);
+}

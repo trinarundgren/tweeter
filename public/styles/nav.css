@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100vw;
+  z-index: 99;
+  padding: 1.5em;
+  background-color: #84099c;
+  color: #ffffff;
+}
+
+/* TWEETER TEXT */
+ nav span:nth-child(1) {
+  font-family: Bungee, sans-serif;
+  float: left;
+}
+
+/* New TWEET Text*/
+nav span:nth-child(2){
+  position: absolute;
+  right: 1.5em;
+  top: 1.5em;
+}
+
+/* angle-double-down icon */
+nav i {
+  position: absolute;
+  right: 115px;
+  bottom: 1.1em;
+  color: #2ef95e;
+}
+
+nav i:hover {
+  color: rgba(221, 236, 61, 0.9);
+  transition: color 0.5s ease;
+}
