@@ -1,18 +1,23 @@
 nav {
-  position: fixed;
-  top: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Sans Pro', sans-serif;
   height: 120px;
   width: 100vw;
-  z-index: 99;
-  padding: 1.5em;
   background-color: #84099c;
   color: #ffffff;
+  align-items: flex-end;
+  padding: 0 1.5em 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* TWEETER TEXT */
  nav span:nth-child(1) {
   font-family: Bungee, sans-serif;
   float: left;
+  font-size: 25px;
 }
 
 /* New TWEET Text*/
@@ -24,10 +29,15 @@ nav span:nth-child(2){
 
 /* angle-double-down icon */
 nav i {
-  position: absolute;
-  right: 115px;
-  bottom: 1.1em;
-  color: #2ef95e;
+  font-family: 'Bungee', sans-serif;
+  font-size: 35px;
+  color: chartreuse;
+}
+
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav i:hover {

@@ -1,0 +1,33 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+form div {
+  font-family: Bungee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #4056A1;
+  color: white;
+  border: none;
+  padding: 0.1em 0.5em;
+}
+
+textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: purple 0.2em solid;
+  margin-bottom: 0.6em;
+  outline: none;
+  resize: none;
+
+}
+
+input:invalid {
+  color: red;
+}

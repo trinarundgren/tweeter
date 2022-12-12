@@ -1,8 +1,9 @@
 header {
   height: 400px;
   width: 100%;
-  position: relative;
-  top: 120px;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
   background-color: rgb(211, 169, 250);
   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
 }
