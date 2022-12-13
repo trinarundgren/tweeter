@@ -1,4 +1,4 @@
-.tweetContainer {
+.tweet-container {
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +21,7 @@ article.tweet > header {
 }
 
 article.tweet > header > h4 {
-  display: none;
+  visibility: hidden;
   color: #d9bde8;
   font-size: 22px;
 }
@@ -72,6 +72,6 @@ article.tweet:hover {
 }
 
 article.tweet:hover > header > h4 {
-  display: flex;
+  visibility: hidden;
   text-shadow: 0.3px 0.3px #b4b4b4;
 }
