@@ -26,10 +26,12 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+ .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   margin: 100px auto 0;
   width: 85%;
-  padding-top: 15px;
  }
  
  .flex-container-row {

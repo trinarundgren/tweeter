@@ -6,7 +6,6 @@
 article.tweet {
   display: flex;
   flex-direction: column;
-  align-items: left;
   border: 3px solid #2d0234;
   padding: 1em;
   margin: 10px 0px;
@@ -34,7 +33,9 @@ div.user {
 }
 
 header > div.user > p {
+  margin-left: 10px;
   font-size: 25px;
+  font-weight: 600;
 
 }
 

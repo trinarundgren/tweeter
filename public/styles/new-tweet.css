@@ -1,7 +1,6 @@
 .new-tweet {
   display: flex;
-  border-color: black;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   color: 90, 87, 77;
 }
