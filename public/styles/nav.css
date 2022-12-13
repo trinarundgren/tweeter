@@ -41,6 +41,6 @@ nav i {
 }
 
 nav i:hover {
-  color: rgba(221, 236, 61, 0.9);
+  color: rgba(17, 9, 245, 0.9);
   transition: color 0.5s ease;
 }

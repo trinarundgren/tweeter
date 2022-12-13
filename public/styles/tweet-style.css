@@ -46,6 +46,7 @@ article.tweet > p {
   padding-bottom: 1em;
   margin-bottom: 10px;
   font-size: 20px;
+  
 }
 
 article.tweet > footer {
@@ -55,11 +56,22 @@ article.tweet > footer {
   font-size: medium;
 }
 
+article.tweet > footer > div > i {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+article.tweet > footer > div > i:hover {
+  color: rgba(226, 4, 250, 0.9);
+  transition: color 0.5s ease;
+}
+
 article.tweet:hover {
   box-shadow: 5px 5px #c98eee;
-  font-weight: bold;
+  text-shadow: 0.4px 0.4px #5f5c53;
 }
 
 article.tweet:hover > header > h4 {
   display: flex;
+  text-shadow: 0.3px 0.3px #b4b4b4;
 }
