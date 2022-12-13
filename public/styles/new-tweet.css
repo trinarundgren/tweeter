@@ -1,3 +1,10 @@
+.new-tweet {
+  display: flex;
+  border-color: black;
+  justify-content: space-between;
+  flex-direction: column;
+  color: 90, 87, 77;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -26,8 +33,4 @@ textarea {
   outline: none;
   resize: none;
 
-}
-
-input:invalid {
-  color: red;
 }

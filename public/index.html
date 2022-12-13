@@ -1,63 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib/normalize/8.0.1/normalize.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--FONT ICONS-->
-    
-    <!-- App CSS -->
-    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="styles/nav.css"  type="text/css"/>
-    <link rel="stylesheet" href="styles/header.css"  type="text/css"/>
-    <link rel="stylesheet" href="styles/new-tweet.css"  type="text/css"/>
+  <!--FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
+
+  <!--FONT ICONS-->
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
 
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-  </head>
+  <!-- App JS -->
+  <script defer type="text/javascript" src="scripts/client.js"></script>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span class="Bungee">TWEETER</span>
-      <div class="flex-container-col">
-        <span><b>Write</b> a new tweet</span>
+  <!-- Character counter-->
+  <script defer type="text/javascript" src="scripts/composer-char-counter.js"></script>
+
+</head>
+
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span class="Bungee">TWEETER</span>
+    <div class="flex-container-col">
+      <span><b>Write</b> a new tweet</span>
       <a href="#"><i class="fa-solid fa-angles-down"></i></a>
-    </nav>
+  </nav>
 
-    <header>
-      <div class="Aligner">
-        <div class="Aligner-item"><img src="/images/profile-hex.png"> </div>
-          <h2>Tinker Bell</h2>
-      </div>
+  <header>
+    <div class="Aligner">
+      <div class="Aligner-item"><img src="/images/profile-hex.png"> </div>
+      <h2>Tinker Bell</h2>
+    </div>
   </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h3>Compose New Tweet</h3>
-        <form method="POST" action="/tweets/">
-          <label class="tweet-post-label" for="tweet-text">What are you asking Santa to bring you for Christmas?</label>
-          <textarea name="text" id="tweet-text" ></textarea>
-          <div class="tweet-btn-ctr bungee">
-            <button class="tweet-btn" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <h3>Compose New Tweet</h3>
+      <form method="POST" action="/tweets/">
+        <label class="tweet-post-label" for="tweet-text">What are you asking Santa to bring you for Christmas?</label>
+        <textarea name="text" id="tweet-text" rows="3"></textarea>
+        <div class="tweet-btn-ctr bungee">
+          <button class="tweet-btn" type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
+    <!-- Container for Tweets -->
+    <section class="tweetContainer">
+
+      <article>
+        <header>
+          <h3>Peter Pan</h3>
+          <h4>@neverland.com</h4>
+        </header>
+
+        <p>The moment you doubt whether you can fly, you cease for ever to be able to do it.</p>
+
+        <footer>
+          <span>13 days ago</span>
+          <div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
           </div>
-        </form>
-      </section>
-    </main>
-    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
-  </body>
-</html>
+        </footer>
+      </article>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html> 
