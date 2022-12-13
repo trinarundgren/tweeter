@@ -1,14 +1,18 @@
 $(document).ready(function() {
   $("#tweet-text").on("input", function () {
     const maxChar = 140;
-    const inputChar = $(this).val().length;
-    const charCounter = maxChar - inputChar;
+    const inputCharLength = $(this).val().length;
+    const charCounter = maxChar - inputCharLength;
 
-    const $counterElement = $(this).parent().find(".counter");
+    const $counterElement = $(this).next().find(".counter");
 
     $counterElement.text(charCounter);
 
     const tooManyChar = charCounter < 0;
-    $("#counterElement").toggleClass( "red-text", tooManyChar);
+    if (tooManyChar) {
+      $counterElement.css('color', 'red');
+    } else {
+      $counterElement.css('color', '#292929');
+    }
   });
 });
