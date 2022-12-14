@@ -61,59 +61,21 @@
   <main class="container">
     <section class="new-tweet">
       <h3>Compose New Tweet</h3>
-      <form method="POST" action="/tweets/">
+      <form class="tweetSubmit" action="/tweets" method="POST">
         <label class="tweet-post-label" for="tweet-text">What are you asking Santa to bring you for Christmas?</label>
-        <textarea name="text" id="tweet-text" rows="3"></textarea>
+        <textarea name="text" class="tweet-text" rows="3"></textarea>
         <div class="tweet-btn-ctr bungee">
           <button class="tweet-btn" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
+
+    
     <!-- Container for Tweets -->
     <section id="tweet-container">
 
-      <article class="tweet">
-        <header>
-          <div class="user">
-            <i class="fa-brands fa-pied-piper-hat fa-2xl"></i>
-            <p> Peter Pan</p>
-          </div>
-          <h4>@neverland</h4>
-        </header>
-
-        <p>The moment you doubt whether you can fly, you cease for ever to be able to do it.</p>
-
-        <footer>
-          <span>13 days ago</span>
-          <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
-
-      <article class="tweet">
-        <header>
-          <div class="user">
-            <i class="fa-solid fa-user-astronaut fa-2xl"></i>
-            <p>Boba</p>
-          </div>
-          <h4>@Mandalore</h4>
-        </header>
-
-        <p>If you wish to continue breathing, I advise you to weigh your next words carefully.</p>
-
-        <footer>
-          <span>10 days ago</span>
-          <div>
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
+      
 
     </section>
   </main>

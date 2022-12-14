@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#tweet-text").on("input", function () {
+  $(".tweet-text").on("input", function () {
     const maxChar = 140;
     const inputCharLength = $(this).val().length;
     const charCounter = maxChar - inputCharLength;

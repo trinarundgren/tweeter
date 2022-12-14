@@ -67,6 +67,7 @@ article.tweet > footer > div > i:hover {
 }
 
 article.tweet:hover {
+  opacity: 1;
   box-shadow: 5px 5px #c98eee;
   text-shadow: 0.4px 0.4px #5f5c53;
 }
