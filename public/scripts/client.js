@@ -61,6 +61,19 @@ const renderTweet = function(data) {
   }
 };
 
+const loadTweets = function() {
+  $.ajax('/tweets', { method: 'GET' })
+    .then((tweets) => {
+      console.log(tweets)
+      return tweets;
+    })
+    .catch((err) => {
+      console.log("There was an ERROR ", err)
+    })
+};
+
+loadTweets()
+
 $(document).ready(function() {
   console.log('doc is ready')
 
@@ -81,4 +94,5 @@ $(document).ready(function() {
   });
   renderTweet(data);
 
+  
 });
