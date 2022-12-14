@@ -41,32 +41,45 @@ const renderTweet = function(data) {
 const loadTweets = function() {
   $.ajax('/tweets', { method: 'GET' })
     .then((tweets) => {
-      renderTweet(tweets)
+      renderTweet(tweets.reverse())
     })
     .catch((err) => {
       console.log("There was an ERROR ", err)
     })
 };
 
+//loads tweets on page load
 loadTweets()
 
 $(document).ready(function() {
   console.log('doc is ready')
 
   $('form.tweetSubmit').on('submit', function(event) {
-    console.log('tweet submitted, sending to database');
+
     event.preventDefault();
+    
+    if (!$('.tweet-text').val()) {
+      return alert('You cannot post an empty tweet')
+    }
+    if ($('.tweet-text').val().length > 140) {
+      return alert("Your tweet exceeds the maximum characters")
+    }
+
     $.ajax('/tweets', {
       method: 'POST',
       data: $(this).serialize()
     })
       .then(function(tweet) {
   
-        $('.tweet-text').val('')
+        $('.tweet-text').val('');
+      })
+      .then(() => {
+        loadTweets();
       })
       .catch((err) => {
         console.log('There was an error', err)
       })
+
   });
 
 
