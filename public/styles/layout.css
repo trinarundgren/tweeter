@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -22,36 +25,44 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   
+  ;
+
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- .container {
+.container {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  margin: 100px auto 0;
+  justify-content: none;
+  margin: 10px auto 0;
   width: 85%;
- 
- }
- 
- /* MEDIA QUERIES */
+
+}
+
+/* MEDIA QUERIES */
 
 @media (min-width: 1024px) {
   body {
     flex-direction: row;
     justify-content: space-between;
   }
-  body > header {
-    width: 33%;
-    margin: 250px 5rem;
+
+  body>header {
+    width: 28%;
+    /* margin: 250px 0px 0px 3rem; */
   }
+
   .container {
-    width: 55%;
+    width: 65%;
     float: right;
-    margin: 200px 0px;
+    margin: 125px 0px;
+  }
+
+  #tweet-container {
+    margin: 25px 3rem 0px 0px;
   }
 }
 
@@ -61,12 +72,18 @@ body {
     background-image: url(https://www.transparenttextures.com/patterns/argyle.png);
     height: 50px;
   }
+
+  body>header {
+    position: relative !important;
+    margin-top: 90px;
+  }
 }
 
 @media (max-width: 570px) {
-  nav > span {
+  nav>span {
     font-size: 2rem;
   }
+
   .writeTweet {
     font-size: 1rem;
   }

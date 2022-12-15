@@ -1,27 +1,26 @@
-body > header {
-  height: 400px;
-  width: 100%;
+body>header {
+  position: absolute;
   margin-top: 120px;
   display: flex;
-  align-items: center;
-  background-color: rgb(211, 169, 250);
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+
+
+  background-color: rgb(235, 180, 243);
   background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
 }
 
 /* Avatar image */
 header img {
-  display: inline-block;
+  display: inline-flex;
   left: 42vw;
   top: 15px
 }
 
 /* Name Text */
 header h2 {
-  display: inline-block;
-  width: 256px;
-  text-align: center;
-  position: relative;
-  left: 42vw;
-  top: 15px;
-  color: rgb(36, 40, 40);
+  margin-top: 0px;
+  margin-left: 0px;
+  color: rgb(125, 7, 146);
 }

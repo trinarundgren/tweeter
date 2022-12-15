@@ -12,7 +12,7 @@ nav {
   width: 100%;
 }
 
-nav > span {
+nav>span {
   font-family: "Bungee", sans-serif;
   font-size: 2em;
 }
@@ -32,9 +32,11 @@ nav > span {
   animation: MoveUpDown is linear infinite;
   margin-bottom: 10px;
 }
-.writeTweet:hover > .arrow {
+
+.writeTweet:hover>.arrow {
   margin-top: 10px;
 }
+
 .writeTweet:active {
   background-position: 0 10%;
   margin-bottom: 0;
@@ -64,10 +66,12 @@ nav i:hover {
 }
 
 @keyframes MoveUpDown {
-  0%, 
+
+  0%,
   50% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }

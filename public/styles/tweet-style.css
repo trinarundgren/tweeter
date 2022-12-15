@@ -12,7 +12,7 @@ article.tweet {
   margin: 10px 0px;
 }
 
-article.tweet > header {
+article.tweet>header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +21,7 @@ article.tweet > header {
   height: 3em;
 }
 
-article.tweet > header > h4 {
+article.tweet>header>h4 {
   visibility: hidden;
   color: #d9bde8;
   font-size: 22px;
@@ -33,14 +33,14 @@ div.user {
   align-items: center;
 }
 
-header > div.user > p {
+header>div.user>p {
   margin-left: 10px;
   font-size: 25px;
   font-weight: 600;
 
 }
 
-article.tweet > p {
+article.tweet>p {
   overflow-wrap: break-word;
   border-bottom: 3px solid;
   padding-right: 10px;
@@ -48,22 +48,22 @@ article.tweet > p {
   padding-bottom: 1em;
   margin-bottom: 10px;
   font-size: 20px;
-  
+
 }
 
-article.tweet > footer {
+article.tweet>footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: medium;
 }
 
-article.tweet > footer > div > i {
+article.tweet>footer>div>i {
   margin-left: 3px;
   margin-right: 3px;
 }
 
-article.tweet > footer > div > i:hover {
+article.tweet>footer>div>i:hover {
   color: rgba(226, 4, 250, 0.9);
   transition: color 0.5s ease;
 }
@@ -74,7 +74,7 @@ article.tweet:hover {
   text-shadow: 0.4px 0.4px #5f5c53;
 }
 
-article.tweet:hover > header > h4 {
+article.tweet:hover>header>h4 {
   visibility: hidden;
   text-shadow: 0.3px 0.3px #b4b4b4;
 }

@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-const escape = function(str) {
+const escape = function (str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
@@ -14,7 +14,7 @@ const escape = function(str) {
 $(document).ready(function () {
 
   //turns tweet objects into HTML formatted tweet articles
-  const createTweetElement = function(data) {
+  const createTweetElement = function (data) {
     let $tweet = $(`
   <article class="tweet">
   <header>
@@ -40,14 +40,14 @@ $(document).ready(function () {
     $('#tweet-container').prepend($tweet);
   };
 
-  const renderTweet = function(data) {
-    
+  const renderTweet = function (data) {
+
     for (let tweet of data) {
       createTweetElement(tweet);
     }
   };
 
-  $('form.tweetSubmit').on('submit', function(event) {
+  $('form.tweetSubmit').on('submit', function (event) {
 
     event.preventDefault();
 
@@ -61,7 +61,7 @@ $(document).ready(function () {
     }
 
 
-//tweet submission to data
+    //tweet submission to data
     $.ajax('/tweets', {
       method: 'POST',
       data: $(this).serialize()
@@ -70,19 +70,19 @@ $(document).ready(function () {
 
   });
 
-  const loadTweets = function() {
+  const loadTweets = function () {
     $.ajax('/tweets', { method: 'GET' })
       .then(renderTweet)
 
       .catch((err) => {
         console.log("There was an ERROR ", err)
       })
-      $('.counter').text(140)
+    $('.counter').text(140)
   };
 
   loadTweets()
 
-  $('.writeTweet').on('click', function() {
+  $('.writeTweet').on('click', function () {
     $('.new-tweet').slideToggle(200);
   })
 
