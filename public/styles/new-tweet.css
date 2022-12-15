@@ -18,8 +18,8 @@ form div {
 }
 
 form button {
-  background-color: #4056A1;
-  color: white;
+  background-color: #660980;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 0.1em 0.5em;
 }

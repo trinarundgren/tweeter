@@ -1,37 +1,53 @@
 nav {
   display: flex;
   justify-content: space-between;
-  font-family: 'Source Sans Pro', sans-serif;
+  align-items: center;
   height: 120px;
-  width: 100vw;
-  background-color: #84099c;
+  background: #580378;
   color: #ffffff;
-  align-items: flex-end;
-  padding: 0 1.5em 1em;
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding: 1.5em;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  width: 100%;
 }
 
-/* TWEETER TEXT */
- nav span:nth-child(1) {
-  font-family: Bungee, sans-serif;
-  float: left;
-  font-size: 25px;
+nav > span {
+  font-family: "Bungee", sans-serif;
+  font-size: 2em;
 }
 
-/* New TWEET Text*/
-nav span:nth-child(2){
-  position: absolute;
-  right: 1.5em;
-  top: 1.5em;
+.writeTweet {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1em;
+  transition: 0.1s;
+}
+
+.writeTweet:hover {
+  margin-bottom: 10px;
+}
+.writeTweet:hover > .arrow {
+  margin-top: 10px;
+}
+.writeTweet:active {
+  background-position: 0 10%;
+  margin-bottom: 0;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 /* angle-double-down icon */
 nav i {
   font-family: 'Bungee', sans-serif;
-  font-size: 20px;
-  color: chartreuse;
+  font-size: 35px;
+  color: rgb(250, 6, 246);
 }
 
 .flex-container-col {
@@ -41,6 +57,6 @@ nav i {
 }
 
 nav i:hover {
-  color: rgba(17, 9, 245, 0.9);
+  color: rgba(26, 139, 251, 0.9);
   transition: color 0.5s ease;
 }

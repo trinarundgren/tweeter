@@ -1,12 +1,13 @@
 .tweet-container {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 article.tweet {
   display: flex;
   flex-direction: column;
-  border: 3px solid #2d0234;
+  border: 3px solid #010500;
   padding: 1em;
   margin: 10px 0px;
 }
@@ -40,6 +41,7 @@ header > div.user > p {
 }
 
 article.tweet > p {
+  overflow-wrap: break-word;
   border-bottom: 3px solid;
   padding-right: 10px;
   padding-left: 10px;

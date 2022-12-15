@@ -51,6 +51,8 @@ $(document).ready(function () {
 
     event.preventDefault();
 
+    $('.errorText').slideUp(400).text('');
+
     if (!$('textarea').val().length) {
       return $('.errorText').text('Your tweet is empty, please try again.').slideDown();
     }
@@ -58,9 +60,7 @@ $(document).ready(function () {
       return $('.errorText').text("You have a lot to say! Maybe too much?").slideDown();
     }
 
-    $('.errorText').text('').hide()
 
-    
 //tweet submission to data
     $.ajax('/tweets', {
       method: 'POST',
@@ -80,6 +80,10 @@ $(document).ready(function () {
   };
 
   loadTweets()
+
+  $('.writeTweet').on('click', function() {
+    $('.new-tweet').slideToggle(200);
+  })
 
 
 });
