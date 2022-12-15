@@ -31,5 +31,16 @@ textarea {
   margin-bottom: 0.6em;
   outline: none;
   resize: none;
+}
 
+.errorText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  display: none;
+  color: rgb(252, 57, 181);
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 10px;
 }

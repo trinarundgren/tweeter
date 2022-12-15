@@ -24,10 +24,11 @@ $(document).ready(function () {
         alt="">
         <p>${escape(data.user.name)}</p>
     </div>
-    <h4>${escape(data.user.handle)}</h4>
+    <div>${escape(data.user.handle)}</div>
   </header>
   <p>${escape(data.content.text)}</p>
   <footer>
+  <p>${timeago.format(data.created_at)}</p>
     <div>
       <i class="fas fa-flag"></i>
       <i class="fas fa-retweet"></i>
@@ -51,12 +52,16 @@ $(document).ready(function () {
     event.preventDefault();
 
     if (!$('textarea').val().length) {
-      return alert('You cannot post an empty tweet')
+      return $('.errorText').text('Your tweet is empty, please try again.').slideDown();
     }
     if ($('textarea').val().length > 140) {
-      return alert("Your tweet exceeds the maximum characters")
+      return $('.errorText').text("You have a lot to say! Maybe too much?").slideDown();
     }
-//tweet submission to database
+
+    $('.errorText').text('').hide()
+
+    
+//tweet submission to data
     $.ajax('/tweets', {
       method: 'POST',
       data: $(this).serialize()
