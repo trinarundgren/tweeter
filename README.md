@@ -26,12 +26,12 @@ This repository is the starter code for the project: Students will fork and clon
      style="float: left; margin-right: 10px;">
 
 3. Small mobile device:
-<img src="/screenshots/tweeter (3).png"
+<img src="screenshots/tweeter (3).PNG"
      alt="tweeter page on mobile device"
      style="float: left; margin-right: 10px;">
 
 4. Tablet device:
-<img src="/screenshots/tweeter (4).png"
+<img src="screenshots/tweeter (4).PNG"
      alt="tweeter page on tablet"
      style="float: left; margin-right: 10px;">
 
