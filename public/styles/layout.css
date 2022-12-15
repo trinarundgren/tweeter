@@ -15,6 +15,8 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
   color: #292929;
   background-color: #f3e3f7;
   font-family: 'Source Sans Pro', sans-serif;
@@ -35,13 +37,28 @@ body {
  
  }
  
- .flex-container-row {
-  display: flex;
-  flex-direction: row;
+
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body > header {
+    width: 33%;
+    margin: 250px 5rem;
+  }
+  .container {
+    width: 55%;
+    float: right;
+    margin: 200px 0px;
+  }
 }
 
-.flex-container-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 570px) {
+  nav > span {
+    font-size: 2rem;
+  }
+  .writeTweet {
+    font-size: 1rem;
+  }
 }

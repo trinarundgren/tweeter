@@ -29,6 +29,7 @@ nav > span {
 }
 
 .writeTweet:hover {
+  animation: MoveUpDown is linear infinite;
   margin-bottom: 10px;
 }
 .writeTweet:hover > .arrow {
@@ -48,6 +49,7 @@ nav i {
   font-family: 'Bungee', sans-serif;
   font-size: 35px;
   color: rgb(250, 6, 246);
+  animation: MoveUpDown 1s linear 3;
 }
 
 .flex-container-col {
@@ -59,4 +61,14 @@ nav i {
 nav i:hover {
   color: rgba(26, 139, 251, 0.9);
   transition: color 0.5s ease;
+}
+
+@keyframes MoveUpDown {
+  0%, 
+  50% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
