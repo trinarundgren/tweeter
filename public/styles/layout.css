@@ -37,6 +37,7 @@ body {
  
  }
  
+ /* MEDIA QUERIES */
 
 @media (min-width: 1024px) {
   body {
@@ -51,6 +52,14 @@ body {
     width: 55%;
     float: right;
     margin: 200px 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    background-color: rgb(211, 169, 250);
+    background-image: url(https://www.transparenttextures.com/patterns/argyle.png);
+    height: 50px;
   }
 }
 

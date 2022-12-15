@@ -77,6 +77,7 @@ $(document).ready(function () {
       .catch((err) => {
         console.log("There was an ERROR ", err)
       })
+      $('.counter').text(140)
   };
 
   loadTweets()
