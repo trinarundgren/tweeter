@@ -16,23 +16,23 @@ This repository is the starter code for the project: Students will fork and clon
 
 1. Main page full screen:
 
-<img src="screenshots/tweeter(1).png"
-     alt="small phone example of tweeter page"
+<img src="screenshots/tweeter (1).PNG"
+     alt="full page on desktop"
      style="float: left; margin-right: 10px;">
      
 2. Error:
-<img src="screenshots/tweeter(2).png"
-     alt="tablet example of tweeter page"
+<img src="screenshots/tweeter (2).PNG"
+     alt="full page with error"
      style="float: left; margin-right: 10px;">
 
 3. Small mobile device:
-<img src="screenshots/tweeter(3).png"
-     alt="full-size screen example of tweeter page"
+<img src="/screenshots/tweeter (3).png"
+     alt="tweeter page on mobile device"
      style="float: left; margin-right: 10px;">
 
 4. Tablet device:
-<img src="screenshots/tweeter(4).png"
-     alt="tweeter page with form open"
+<img src="/screenshots/tweeter (4).png"
+     alt="tweeter page on tablet"
      style="float: left; margin-right: 10px;">
 
 ## Dependencies
