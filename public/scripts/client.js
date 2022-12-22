@@ -37,10 +37,11 @@ $(document).ready(function () {
   </footer>
 </article>
 `);
-    $('#tweet-container').prepend($tweet);
+    $("#tweet-container").prepend($tweet);
   };
 
   const renderTweet = function (data) {
+    $('#tweet-container').empty();
 
     for (let tweet of data) {
       createTweetElement(tweet);
